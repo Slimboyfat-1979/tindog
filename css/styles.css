@@ -33,7 +33,7 @@ p {
 }
 
 .container-fluid {
-    padding: 3% 15%;
+    padding: 3% 15% 7%;
 }
 
 /* Navigation Bar */
@@ -65,14 +65,22 @@ p {
 title image */
 
 .title-image {
-    width: 60%;
+    /* width: 60%; */
     transform: rotate(25deg);
+    position: absolute;
+    top: 100px;
+    right: 250px;
+    z-index: 0;
+   
+  
 }
 
 /* Features Section */
 
 #features {
     padding: 7% 15%;
+    background-color: #fff;
+    position: relative;
 }
 
 .feature-box {
@@ -118,5 +126,45 @@ title image */
     margin: 20px 20px 50px;
 }
 
+#pricing {
+    padding: 100px;
+    text-align: center;
+}
+.pricing-column {
+    padding: 3% 2%;
+}
+
+@media (max-width: 1028px){
+    .title-image {
+        position: static;
+        transform: rotate(0);
+    }
+
+    #title {
+        text-align: center;
+    }
+}
+
+#cta {
+    text-align: center;
+    color: #fff;
+    background: #ff4c68;
+    padding: 100px;
+}
+
+.dl {
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+#footer {
+    padding: 90px;
+    text-align: center;
+}
+
+.social i {
+    padding: 5px;
+    margin-bottom: 20px;
+}
 
 
